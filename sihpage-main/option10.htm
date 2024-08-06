@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <style>
+      h1 {
+        font-weight: 900;
+        text-align: center;
+      }
+      .b-skills {
+        border-top: 1px solid #f9f9f9;
+        padding-top: 46px;
+        text-align: center;
+      }
+
+      .b-skills:last-child {
+        margin-bottom: -30px;
+      }
+
+      .b-skills h2 {
+        margin-bottom: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .skill-item {
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      .chart-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        margin-bottom: 27px;
+      }
+
+      .skill-item .chart,
+      .skill-item .chart canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      .skill-item .chart:before {
+        content: "";
+        width: 0;
+        height: 100%;
+      }
+
+      .skill-item .chart:before,
+      .skill-item .percent {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .skill-item .percent {
+        position: relative;
+        line-height: 1;
+        font-size: 40px;
+        font-weight: 900;
+        z-index: 2;
+      }
+
+      .skill-item .percent:after {
+        content: attr(data-after);
+        font-size: 20px;
+      }
+
+      p {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br /><br /><br /><br />
+    <h1>Dropout Analysis of CHANDIGARH</h1>
+
+    <section id="s-team" class="section">
+      <br /><br /><br />
+      <div class="b-skills">
+        <div class="container">
+          <h2>EDUCATION LEVELS</h2>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="17" data-bar-color="#23afe3">
+                    <span class="percent" data-after="%">17</span>
+                  </div>
+                </div>
+
+                <p>PRIMARY</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="12" data-bar-color="#a7d212">
+                    <span class="percent" data-after="%">12</span>
+                  </div>
+                </div>
+
+                <p>UPPER PRIMARY</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="9" data-bar-color="#ff4241">
+                    <span class="percent" data-after="%">9</span>
+                  </div>
+                </div>
+
+                <p>SECONDARY</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="15" data-bar-color="#edc214">
+                    <span class="percent" data-after="%">15</span>
+                  </div>
+                </div>
+
+                <p>SENIOR SECONDARY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s-team" class="section">
+      <br /><br /><br />
+
+      <div class="b-skills">
+        <div class="container">
+          <h2>Religion Wise</h2>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="21" data-bar-color="#23afe3">
+                    <span class="percent" data-after="%">21</span>
+                  </div>
+                </div>
+
+                <p>HINDUS</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="18" data-bar-color="#a7d212">
+                    <span class="percent" data-after="%">18</span>
+                  </div>
+                </div>
+
+                <p>MUSLIMS</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="12" data-bar-color="#ff4241">
+                    <span class="percent" data-after="%">12</span>
+                  </div>
+                </div>
+
+                <p>SIKHS</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="13" data-bar-color="#edc214">
+                    <span class="percent" data-after="%">13</span>
+                  </div>
+                </div>
+
+                <p>CHRISTIANS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s-team" class="section">
+      <br /><br /><br />
+
+      <div class="b-skills">
+        <div class="container">
+          <h2>Caste Wise</h2>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="12" data-bar-color="#23afe3">
+                    <span class="percent" data-after="%">12</span>
+                  </div>
+                </div>
+
+                <p>BRAHMIN</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="22" data-bar-color="#a7d212">
+                    <span class="percent" data-after="%">22</span>
+                  </div>
+                </div>
+
+                <p>RAJPUT</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="11" data-bar-color="#ff4241">
+                    <span class="percent" data-after="%">11</span>
+                  </div>
+                </div>
+
+                <p>KSHATRIYA</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="16" data-bar-color="#edc214">
+                    <span class="percent" data-after="%">16</span>
+                  </div>
+                </div>
+
+                <p>DALIT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s-team" class="section">
+      <br /><br /><br />
+
+      <div class="b-skills">
+        <div class="container">
+          <h2>REASONS OF DROPOUT</h2>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="19" data-bar-color="#23afe3">
+                    <span class="percent" data-after="%">19</span>
+                  </div>
+                </div>
+
+                <p>Economic Issues</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="12" data-bar-color="#a7d212">
+                    <span class="percent" data-after="%">12</span>
+                  </div>
+                </div>
+
+                <p>Social Issues</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="15" data-bar-color="#ff4241">
+                    <span class="percent" data-after="%">15</span>
+                  </div>
+                </div>
+
+                <p>Lack of Interest</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="skill-item center-block">
+                <div class="chart-container">
+                  <div class="chart" data-percent="16" data-bar-color="#edc214">
+                    <span class="percent" data-after="%">16</span>
+                  </div>
+                </div>
+
+                <p>Health Issues</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br />
+
+    <br /><br /><br /><br />
+
+    <script src="plugins/jquery-2.2.4.min.js"></script>
+    <script src="plugins/jquery.appear.min.js"></script>
+    <script src="plugins/jquery.easypiechart.min.js"></script>
+    <script>
+      "use strict";
+
+      var $window = $(window);
+
+      function run() {
+        var fName = arguments[0],
+          aArgs = Array.prototype.slice.call(arguments, 1);
+        try {
+          fName.apply(window, aArgs);
+        } catch (err) {}
+      }
+
+      /* chart
+================================================== */
+      function _chart() {
+        $(".b-skills").appear(function () {
+          setTimeout(function () {
+            $(".chart").easyPieChart({
+              easing: "easeOutElastic",
+              delay: 3000,
+              barColor: "#369670",
+              trackColor: "#fff",
+              scaleColor: false,
+              lineWidth: 21,
+              trackWidth: 21,
+              size: 250,
+              lineCap: "round",
+              onStep: function (from, to, percent) {
+                this.el.children[0].innerHTML = Math.round(percent);
+              },
+            });
+          }, 150);
+        });
+      }
+
+      $(document).ready(function () {
+        run(_chart);
+      });
+    </script>
+  </body>
+</html>

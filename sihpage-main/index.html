@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT DROPOUT ANALYSIS</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(42, 42, 214);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li :hover {
+            color: rgb(209, 46, 204);
+            font: size 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstSection>div {
+            width: 70%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 0px 70px;
+
+        }
+
+        .leftSection_content {
+            align-items: flex-start;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        .rightSection img {
+
+            width: 60%;
+            margin: 50px 0;
+
+
+        }
+
+        .purple {
+            color: rgb(225, 31, 250);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb("170,107,228");
+
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">STUDENT DROPOUT ANALYSIS SYSTEM</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="form.html">Log in</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span class="purple">Welcome</span>
+                <div class="leftSection_content">
+                    <p>Timely and accurate data is the basis of sound and effective planning
+                        and decision-making. Towards this, the establishment of a well-functioning Sustainable
+                        Educational
+                        Management Information System is of utmost importance today.</p>
+
+                    <p>Student Dropout Analysis System(SDAS) is one of the largest Management Information Systems
+                        initiated
+                        by Department of School Education of Bihar covering more than 1 lacs of schools and 2.5 crores
+                        of
+                        children.</p>
+
+                    <p>The entire system is online and has been collecting data in real-time since 2023-24. SDAS has a
+                        mandate of collecting information from all recognized schools imparting formal education from
+                        Pre-primary to class XII. Information collected through the digital platform, SDAS is utilized
+                        for
+                        planning, optimizing resource allocation and implementing various education-related programs and
+                        assessing progress. SDAS provides a platform to organize and classify all school data across the
+                        country and build a credible database of school data. It monitors, measures and keeps track of
+                        vital
+                        KPIs related to school and student performance
+                </div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="map-removebg-preview.png" alt="">
+            </div>
+    </main>
+
+    <div id="about">
+        <div class="container">
+            <div class="top_container">
+                <h1 class="subtitle">About Dropouts</h1>
+                <p>School dropouts are students who leave their education before completing a particular level or
+                    course. Common reasons include socioeconomic challenges, such as poverty and the need to work to
+                    support their families. Inadequate access to quality education can also be a barrier, as can family
+                    issues like caregiving responsibilities. Sometimes, a lack of engagement or disinterest in the
+                    academic curriculum can lead to dropouts. Addressing these factors through various interventions and
+                    support systems is crucial to reducing dropout rates and ensuring that more students complete their
+                    education.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <h1>Dropout Analysis of Indian States<h5>(*from high to low)</h5>
+        </h1>
+    </center>
+    <div class="chart">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>50%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <a href="option01.htm">
+                    <div class="bar" data-percentage="21.7">
+                    </div>
+                </a>
+                <span>Meghalaya</span>
+            </li>
+            <li>
+                <a href="option06.htm">
+                    <div class="bar" data-percentage="20.46">
+                    </div>
+                </a>
+                <span>Bihar</span>
+            </li>
+            <li>
+                <a href="option02.htm">
+                    <div class="bar" data-percentage="18.9">
+                    </div>
+                </a>
+                <span>Manipur</span>
+            </li>
+            <li>
+                <a href="option03.htm">
+                    <div class="bar" data-percentage="16.3">
+                    </div>
+                </a>
+                <span>Gujarat</span>
+            </li>
+            <li>
+                <a href="option04.htm">
+                    <div class="bar" data-percentage="14.8">
+                    </div>
+                </a>
+                <span>Assam</span>
+            </li>
+            <li>
+                <a href="option05.htm">
+                    <div class="bar" data-percentage="11.9">
+                    </div>
+                </a>
+                <span>Madhya Pradesh</span>
+            </li>
+            <li>
+                <a href="option07.htm">
+                    <div class="bar" data-percentage="3.1">
+                    </div>
+                </a>
+                <span>Telangana</span>
+            </li>
+            <li>
+                <a href="option08.htm">
+                    <div class="bar" data-percentage="1.6">
+                    </div>
+                </a>
+                <span>Andhra Pradesh</span>
+            </li>
+            <li>
+                <a href="option09.htm">
+                    <div class="bar" data-percentage="1.1">
+                    </div>
+                </a>
+                <span>Karnatka</span>
+            </li>
+            <li>
+                <a href="option10.htm">
+                    <div class="bar" data-percentage="0.2">
+                    </div>
+                </a>
+                <span>Chandigarh</span>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".bar").each(function (key, bar) {
+                var percentage = $(this).data("percentage");
+                $(this).animate(
+                    {
+                        height: percentage + "%",
+                    },
+                    1000
+                );
+            });
+        });
+    </script>
+
+
+
+
+    <!-- -----------------------services---------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <!-- web-development icon -->
+                    <h2>MENTORSHIP PROGRAM</h2><br>
+                    <p>Join our mentorship program and help shape the future of education through our dropout analysis website. As a mentor, you'll play a vital role in guiding aspiring individuals, contributing to a brighter educational landscape. Together, we'll empower students to stay on the path to success and revolutionize the way we tackle dropout rates. Join us on this transformative journey!</p>
+                    <h3><a href="mentorship.htm">Learn more</a></h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <!-- Java icon -->
+                    <h2>GOVT. SCHEMES</h2><br>
+                    <p>Explore and discover the multitude of government schemes designed to empower and uplift communities. Our platform serves as your one-stop resource to access, understand, and benefit from these initiatives. From education and healthcare to economic development and social welfare, we provide comprehensive information and support to ensure you can make the most of the opportunities available. Join us in unlocking the potential of government schemes to improve lives, foster growth, and create a brighter future for all.</p>
+                    <h3><a href="govtschemes.htm">Learn more</a></h3>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <!-- DSA icon -->
+                    <h2>SKILL COURSES</h2><br>
+                    <p>Embark on a journey of skill development and personal growth with our wide range of skill courses. Whether you're looking to enhance your professional qualifications, explore a new hobby, or build a valuable skill set, our courses offer something for everyone. From cutting-edge technology and creative arts to practical life skills, we provide top-notch training and resources to help you succeed. Invest in yourself, unlock your potential, and seize new opportunities by enrolling in our skill courses today. Elevate your skills, broaden your horizons, and shape a brighter future for yourself.</p>
+                    <h3><a href="skillcourse.htm">Learn more</a></h3>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------contacts------------------------ -->
+    <div id="contact">
+        
+
+        </div>
+        <footer _ngcontent-vah-c35="">
+            <div _ngcontent-vah-c35="" class="footer-area-top">
+                <div _ngcontent-vah-c35="" class="container">
+                    <div _ngcontent-vah-c35="" class="row">
+                        <div _ngcontent-vah-c35="" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div _ngcontent-vah-c35="" class="footer-box mt-3">
+                                <h3 _ngcontent-vah-c35="" class="text-white">Main</h3>
+                            </div>
+                            <ul _ngcontent-vah-c35="" class="featured-links">
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/" routerlink="/">
+                                        Home</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" routerlink="/page/about"
+                                        href="#/page/about"> About UDISE+</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" routerlink="/page/code"
+                                        href="#/page/code"> Get UDISE Code</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/dcfdownload"
+                                        routerlink="/page/dcfdownload"> Data Capture Formats</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/publications"
+                                        routerlink="/page/publications"> Publications &amp; Statistics</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/faqs"
+                                        routerlink="/page/faqs"> FAQ's</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/contact"
+                                        routerlink="/page/contact"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div _ngcontent-vah-c35="" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div _ngcontent-vah-c35="" class="footer-box mt-3">
+                                <h3 _ngcontent-vah-c35="" class="text-white">Other Links</h3>
+                            </div>
+                            <ul _ngcontent-vah-c35="" class="featured-links">
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35=""
+                                        href="https://dsel.education.gov.in/" target="_blank"> Department of School
+                                        Education &amp; Literacy</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35=""
+                                        href="https://www.education.gov.in/hi" target="_blank"> Ministry of
+                                        Education</a></li>
+                                <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="http://164.100.77.133/"
+                                        target="_blank"> Click Here For report of 2021-22</a></li>
+                                        <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/copyright"
+                                            routerlink="/page/copyright">Website Policy </a></li>
+                                    <li _ngcontent-vah-c35=""><a _ngcontent-vah-c35="" href="#/page/sitemap"
+                                            routerlink="/page/sitemap"> Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div _ngcontent-vah-c35="" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div _ngcontent-vah-c35="" class="footer-box mt-3">
+                                <p _ngcontent-vah-c35="" class="text-white mt-3 mb-0 pb-0 f13">This site is designed,
+                                    developed, maintained and hosted by Manoj jaiswal </p>
+                                <p _ngcontent-vah-c35="" class="text-white mb-0 pb-0 f13">This Website belongs to
+                                    &copy;MANOJ</p>
+                                <p _ngcontent-vah-c35="" class="text-white f13">manojjaiswalok@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><button _ngcontent-vah-c35="" class="scroll-to-top show-scroll"><svg _ngcontent-vah-c35="" width="1em"
+                    height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    class="bi bi-capslock-fill">
+                    <path _ngcontent-vah-c35="" fill-rule="evenodd" d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73
+        1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326
+        8.455.924 7.816L7.27 1.047zM4.5 13.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1
+        0 0 1-1 1h-5a1 1 0 0 1-1-1v-1z"></path>
+                </svg></button>
+        </footer>
+    </div>
+
+
+    </script>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

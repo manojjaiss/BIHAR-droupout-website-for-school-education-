@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard UI</title>
+	<link rel="stylesheet" type="text/css" href="dashboardstyle.css">
+  <link rel="stylesheet" href="style1.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">STUDENT DROPOUT ANALYSIS SYSTEM</div>
+      <div class="right">
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Log Out</a></li>
+          <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </div>
+    </nav>
+  </header>
+
+<div class="main">
+  
+	<div class="main-top">
+    
+		<input type="text" name="" class="input" placeholder="Search">
+		<div class="top-right">
+			
+			<i class="fa fa-bell-o topicon bell"></i>
+			<div class="notification-div">
+			<p>Success!Your registration is now complete!</p>
+			<p>Here's some information you may find useful!</p>			
+		</div>
+
+
+			<!-- <a href="#" class="user1"><img src="image/user.png" class="user">
+				<div class="profile-div">
+					<p><i class="fa fa-user"></i> &nbsp;&nbsp;Profile</p>
+					<p><i class="fa fa-cog"></i> &nbsp;&nbsp;Settings</p>
+					<p><i class="fa fa-power-off"></i> &nbsp;&nbsp;Log Out</p>
+				</div>
+			</a> -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+
+	<div class="cong-box">
+		<div class="content">
+		<p class="head">Congratulations Manoj! 🎉</p><br>
+		<p>You have achieved 82% in your previous class.</p>
+		<button class="btnach">Achievemnets
+      <select name="certificate" id="certificate">
+
+        <option value="9th">Acievement 1</option>
+        <option value="8th">Acievement 2</option>
+        <option value="7th">Acievement 3</option>
+        <option value="6th">Acievement 4</option>
+        <option value="5th">Acievement 5</option>
+      
+      </select>
+    </button>
+	</div>
+  <div class="com-box1">
+    <p class="head">Upload Data</p>
+  <input class="btnach" type="file" id="fileInput" />
+  <button id="performActionButton">Perform Action</button>
+  </div>
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const performActionButton = document.getElementById(
+        "performActionButton"
+      );
+
+      performActionButton.addEventListener("click", () => {
+        const selectedFile = fileInput.files[0];
+
+        if (selectedFile) {
+          const fileName = selectedFile.name;
+          performActionBasedOnFileName(fileName);
+        } else {
+          document.querySelector('[data-label="Amount"]').textContent =
+              "DROPOUT";
+        }
+      });
+
+      function performActionBasedOnFileName(fileName) {
+        // Perform different actions based on the file name
+        switch (fileName) {
+          case "PASS.txt":
+            
+            document.querySelector('[data-label="Amount"]').textContent =
+              "completed";
+            break;
+          case "FAIL.txt":
+            
+            document.querySelector('[data-label="Amount"]').textContent =
+              "failed";
+            break;
+          default:
+            alert("Unknown file name. No specific action defined.");
+            // Add a default action or handle unknown file names here
+            break;
+        }
+      }
+    </script>
+	</div>
+
+	<div class="com-box">
+    <a class="govt-sche" href="govtschemes.htm">
+		<div class="com-inner">
+    <i class="fa fa-cubes"></i>
+	  <h1>Govt schemes</h1>
+		</div>
+    </a>
+  
+	</div>
+	<div class="com-box">
+		<div class="com-inner">
+		<i class="fa fa-desktop"></i>
+    <h1>Certifiacte</h1>
+    <button class="btnach">Download
+      <select name="certificate" id="certificate">
+
+        <option value="9th">11th certificate</option>
+        <option value="8th">10th certificate</option>
+        <option value="7th">9th certificate</option>
+        <option value="6th">8th certificate</option>
+        <option value="5th">7th certificate</option>
+      
+      </select>
+    </button>
+		<!-- <p style="color: green;"><i class="fa fa-long-arrow-up upnar"></i> +28.25%</p> -->
+		</div>
+	</div>
+
+
+	<div class="table-box">
+		<table>
+  
+  <thead>
+    <tr>
+      <th scope="col" width="50px">ID</th>
+      <th scope="col" width="100px">Name</th>
+      <th scope="col">Year</th>
+      <th scope="col">Class</th>
+      <th scope="col">Status</th>
+      <!-- <th scope="col" width="70px">Action</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="active-tr">
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2022</td>
+      <td data-label="Class">12<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="pe"></span>ongoing</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+
+    <tr >
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2021</td>
+      <td data-label="Class">11<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="de"></span>completed</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear  ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+   <tr>
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2020</td>
+      <td data-label="Class">10<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="de"></span>completed</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+
+    <tr>
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2019</td>
+      <td data-label="Class">9<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="de"></span>completed</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+    
+    <tr>
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2018</td>
+      <td data-label="Class">8<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="de"></span>completed</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear  ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+
+    <tr>
+      <td data-label="Account">#3412</td>
+      <td data-label="Name">Manoj</td>
+      <td data-label="Period">2017</td>
+      <td data-label="Class">7<sup>th</sup></td>
+      <td data-label="Amount" style="position: relative;"><span class="de"></span>completed</td>
+      <!-- <td data-label="Period"><i class="fa fa-gear ticon"></i>
+      &nbsp; 
+      	<i class="fa fa-angle-down ticon"></i></td> -->
+    </tr>
+    
+  </tbody>
+</table>
+	</div>
+
+
+	<div class="t-sale">
+		
+			<div class="content-box-1">
+			<br>	
+			<p class="head-1">Dropout Percentage </p>
+
+			<div class="circle-wrap">
+    <div class="circle">
+      <div class="mask full">
+        <div class="fill"></div>
+      </div>
+      <div class="mask half">
+        <div class="fill"></div>
+      </div>
+      <div class="inside-circle"> 15% </div>
+    </div>
+  </div>
+		</div>
+		<div style="text-align: center; color: #a3a4cc;">BIHAR</div>
+		<a href="option03.htm"><div style="text-align: center;"><button class="btnview">Veiw All</button></div></a>
+	</div>
+	</div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".span1").click(function(){
+    $(".dropdown").slideToggle(500);
+  });
+});
+
+	$('.sidenav li').click(function(){
+    $('.sidenav li').removeClass("active");
+    $(this).addClass("active");
+});
+</script>
+
+<script type="text/javascript">
+	$(".menu-icon").click(function(e) {
+        e.preventDefault();
+        $(".menu-icon").toggleClass("menuicon");
+        $(".main").toggleClass("main-width");
+        $(".sidebar").toggleClass("active1");
+        $(".sidenav li a").toggleClass("anchor");
+        $(".sidenav li").toggleClass("lislide");
+        $(".sidenav p").toggleClass("apphide");
+        $(".logo span").toggleClass("headspan");
+        $(".logo").toggleClass("lm");
+
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".user").click(function(){
+    $(".profile-div").toggle(1000);
+  });
+  $(".bell").click(function(){
+    $(".notification-div").toggle(1000);
+  });
+});
+</script>
+</body>
+</html>
